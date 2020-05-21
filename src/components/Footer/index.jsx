@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./footer.scss";
 
 const Footer = () => (
@@ -8,10 +9,12 @@ const Footer = () => (
         <div className="col-lg-5 col-sm-12">
           <div className="footer__first-col">
             <div className="brand">
-              <img
-                src="https://res.cloudinary.com/john-pels/image/upload/v1590034057/fandk.svg"
-                alt=""
-              />
+              <Link to="/">
+                <img
+                  src="https://res.cloudinary.com/john-pels/image/upload/v1590034057/fandk.svg"
+                  alt="FandK-brand"
+                />
+              </Link>
             </div>
             <p className="first-col-p">
               At F&K Savings we intend to help <br /> millions of people reach
@@ -40,8 +43,12 @@ const Footer = () => (
           <div className="footer__third-col">
             <h5 className="third-col-h5">Help</h5>
             <ul className="ul">
-              <li>How it works</li>
-              <li>FAQ'S</li>
+              <li>
+                <Link to="/how">How it works</Link>
+              </li>
+              <li>
+                <Link to="/faq">FAQ'S</Link>
+              </li>
             </ul>
           </div>
         </div>

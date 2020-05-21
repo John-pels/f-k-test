@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import TocSharpIcon from "@material-ui/icons/TocSharp";
 import { TemporaryDrawer } from "../Drawer";
 import "./navigation.scss";
@@ -8,16 +9,28 @@ const Navigation = () => (
     <nav className="nav">
       <div className="nav__section">
         <div className="brand">
-          <img
-            src="https://res.cloudinary.com/john-pels/image/upload/v1590034057/fandk.svg"
-            alt="FandK-brand"
-          />
+          <Link to="/">
+            <img
+              src="https://res.cloudinary.com/john-pels/image/upload/v1590034057/fandk.svg"
+              alt="FandK-brand"
+            />
+          </Link>
         </div>
         <ul>
-          <li>Customers</li>
-          <li>Product</li>
-          <li>About</li>
-          <li>Learn</li>
+          <li>
+            <Link to="/how">Customers</Link>
+          </li>
+          <li>
+            {" "}
+            <Link to="/faq">Product</Link>
+          </li>
+          <li>
+            <Link to="/faq">About</Link>
+          </li>
+          <li>
+            {" "}
+            <Link to="/how">Learn</Link>
+          </li>
         </ul>
       </div>
       <div className="nav__section">
