@@ -1,0 +1,124 @@
+.nav {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  padding: 1.5em;
+
+  .icon,
+  .MuiButton-root {
+    display: none;
+
+    @media (max-width: 840px) {
+      display: block;
+      position: absolute;
+      color: #fff;
+      outline: none;
+      top: 0.7em;
+      right: 0.3em;
+      width: 2.5em;
+      height: 2.5em;
+    }
+  }
+
+  &__section {
+    display: flex;
+
+    &:first-child {
+      ul {
+        display: inline-flex;
+        list-style-type: none;
+        margin-left: 4em;
+        padding-top: 0.5em;
+
+        @media (max-width: 840px) {
+          display: none;
+        }
+
+        @media (min-width:841px) and (max-width: 1380px) {
+          padding-top: 0;
+        }
+
+        li {
+          margin: 1em;
+          cursor: pointer;
+          transition: all 0.5s ease-in-out;
+
+          &:hover {
+            color: darken(#dee1ff, 5%);
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      justify-content: flex-end;
+
+      .btn-login {
+        width: 137px;
+        height: 67px;
+        color: #fff;
+        text-align: center;
+        line-height: 67px;
+        text-decoration: none;
+        background: #2336ff;
+        border-radius: 20px;
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: -0.01em;
+        margin-right: 1em;
+        transition: all .5s ease-in-out;
+
+        &:hover {
+          background: darken(#2336ff, 15%);
+        }
+
+        @media (max-width: 840px) {
+          display: none;
+        }
+
+        @media (min-width:841px) and (max-width: 1380px) {
+          width: 100px;
+          height: 40px;
+          line-height: 40px;
+          font-size: 1em;
+        }
+      }
+
+      .btn-create {
+        width: 291px;
+        height: 67px;
+        color: #0d2b76;
+        text-align: center;
+        font-family: "Inter", sans-serif;
+        line-height: 67px;
+        text-decoration: none;
+        background: #dee1ff;
+        box-shadow: 3px -5px 27px rgba(16, 26, 123, 0.44);
+        letter-spacing: 0.01em;
+        border-radius: 20px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        transition: all .5s ease-in-out;
+
+        &:hover {
+          background: darken(#dee1ff, 15%);
+        }
+
+
+        @media (max-width: 840px) {
+          display: none;
+        }
+
+        @media (min-width:841px) and (max-width: 1380px) {
+          width: 200px;
+          height: 40px;
+          line-height: 40px;
+          font-size: 1em;
+
+        }
+      }
+    }
+  }
+}

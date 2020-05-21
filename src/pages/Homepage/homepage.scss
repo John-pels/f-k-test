@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&family=Roboto&display=swap");
+$default-color: #1624b4;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+body {
+  background: #F3F4FF;
+
+}
+
+.homepage {
+  .header {
+    background: url("https://res.cloudinary.com/john-pels/image/upload/v1590041247/Mask_Group.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("https://res.cloudinary.com/john-pels/image/upload/v1590034198/FGroup.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      mix-blend-mode: overlay;
+      width: 25%;
+      height: 40%;
+      z-index: 2;
+      bottom: 16em;
+      left: 6em;
+
+      @media (min-width:841px) and (max-width: 1380px) {
+        bottom: 8em;
+
+      }
+    }
+
+    .hero-text {
+      font-family: "Inter", sans-serif;
+      font-weight: bold;
+      font-size: 100px;
+      padding-left: 1.5em;
+      padding-top: 1em;
+      letter-spacing: -0.01em;
+      line-height: 102.7%;
+
+      @media (max-width: 840px) {
+        font-size: 50px;
+        padding-left: 0;
+        text-align: center;
+      }
+
+      @media (min-width:841px) and (max-width: 1380px) {
+        font-size: 70px;
+      }
+    }
+
+  }
+
+  .main {
+    background: url('https://res.cloudinary.com/john-pels/image/upload/v1590056749/Vectorfk.png') no-repeat right;
+
+    .padding {
+      padding: 3em 8em 0;
+
+      @media(max-width:840px) {
+        padding: 1em;
+      }
+    }
+
+    &__col {
+      display: flex;
+      justify-content: space-around;
+      background: #FFFFFF;
+      padding: 1.5em 4.5em;
+      border-radius: 30px;
+      color: #474747;
+      margin-bottom: 1em;
+
+      @media (max-width:840px) {
+        flex-flow: column wrap;
+        padding: 1em;
+        align-items: center;
+      }
+
+      @media (min-width:841px) and (max-width: 1380px) {
+        padding: 1.5em 2em;
+      }
+
+
+      .items {
+        h5 {
+          font-family: "Roboto", sans-serif;
+          font-weight: 600;
+          line-height: 102.7%;
+          letter-spacing: -0.01em;
+          margin-top: 1.3em;
+
+          @media (max-width:840px) {
+            text-align: center;
+          }
+        }
+
+        p {
+          font-family: "Inter", sans-serif;
+          color: #757575;
+          padding-top: 1em;
+        }
+      }
+    }
+
+    .image {
+      width: 84.98px;
+      margin-right: 1em;
+    }
+  }
+
+}

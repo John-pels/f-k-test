@@ -1,0 +1,126 @@
+.footer {
+    position: relative;
+    background: url('../footer.png') no-repeat;
+    background-size: cover;
+    background-position: 30% 90%;
+    min-height: 500px;
+    color: rgba(255, 255, 255, 0.79);
+    padding: 13em 8em 3em 8em;
+    margin-top: -14em;
+    z-index: 1;
+
+    @media(max-width:840px) {
+        padding: 1em;
+        background: #252D7C;
+        margin-top: 0;
+    }
+
+    @media (min-width:841px) and (max-width: 1380px) {
+        margin-top: -16em;
+    }
+
+
+    &__first-col {
+
+        br {
+            @media (max-width:840px) {
+                display: none;
+            }
+        }
+
+        .brand {
+            margin-bottom: 1em;
+
+        }
+
+        .first-col-p {
+
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            line-height: 32px;
+
+            @media (min-width:841px) and (max-width: 1380px) {
+                font-size: 1em;
+            }
+        }
+
+        .copyright {
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: .7em;
+            line-height: 32px;
+
+        }
+    }
+
+    &__second-col,
+    &__third-col {
+
+        .second-col-h5,
+        .third-col-h5 {
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+            letter-spacing: 0.03em;
+            font-variant: small-caps;
+
+            color: #FFFFFF;
+
+
+            @media (min-width:841px) and (max-width: 1380px) {
+                font-size: 1em;
+
+            }
+
+        }
+
+        .ul {
+            list-style-type: none;
+        }
+    }
+
+    &__fourth-col {
+        .fourth-col-h5 {
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+            letter-spacing: 0.03em;
+            font-variant: small-caps;
+            color: #FFFFFF;
+
+            @media (min-width:841px) and (max-width: 1380px) {
+                font-size: 1em;
+
+            }
+        }
+
+        .social {
+            display: flex;
+
+            @media (min-width:841px) and (max-width: 1380px) {
+                font-size: .8em;
+
+            }
+
+            .icons {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 20%;
+                height: 55px;
+                border-radius: 50%;
+                background: #3843AC;
+
+
+                @media (min-width:841px) and (max-width: 1380px) {
+                    width: 18%;
+                    height: 45px;
+                }
+            }
+        }
+    }
+}

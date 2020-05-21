@@ -1,0 +1,121 @@
+ .how {
+
+     .header {
+         background: url("https://res.cloudinary.com/john-pels/image/upload/v1590041247/Mask_Group.png");
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         min-height: 100vh;
+         color: #fff;
+         position: relative;
+         z-index: 1;
+
+         &::before {
+             content: "";
+             position: absolute;
+             background: url("https://res.cloudinary.com/john-pels/image/upload/v1590034198/FGroup.png");
+             background-repeat: no-repeat;
+             background-size: cover;
+             mix-blend-mode: overlay;
+             width: 25%;
+             height: 40%;
+             z-index: 2;
+             bottom: 16em;
+             right: 2em;
+
+             @media (min-width:841px) and (max-width: 1380px) {
+                 right: 5em;
+                 bottom: 12em;
+             }
+         }
+
+         .hero-text {
+             font-family: "Inter", sans-serif;
+             font-weight: bold;
+             font-size: 100px;
+             padding-left: 1.5em;
+             padding-top: 1em;
+             letter-spacing: -0.01em;
+             line-height: 102.7%;
+
+             @media (max-width: 840px) {
+                 font-size: 50px;
+                 padding-left: 0;
+                 text-align: center;
+             }
+
+             @media (min-width:841px) and (max-width: 1380px) {
+                 font-size: 60px;
+                 margin-left: 1.5em;
+                 padding-top: 0;
+             }
+         }
+
+     }
+
+
+
+
+     .photo {
+         display: flex;
+         margin: 0 auto;
+
+
+         img {
+             width: 100%;
+             height: auto;
+
+             @media (min-width:841px) and (max-width: 1380px) {
+                 display: flex;
+                 margin: 0 auto;
+                 width: 80%;
+             }
+         }
+     }
+
+
+     .h2-how {
+         display: flex;
+         justify-content: center;
+         font-family: 'Inter', sans-serif;
+         font-style: normal;
+         font-weight: bold;
+         font-size: 63px;
+         line-height: 102.7%;
+         letter-spacing: -0.01em;
+         color: #0D2B76;
+
+         @media (max-width: 840px) {
+             font-size: 30px;
+
+         }
+
+         @media (min-width:841px) and (max-width: 1380px) {
+             font-size: 40px;
+             margin-left: 1.5em;
+         }
+     }
+
+     .p-how {
+         font-family: 'Inter', sans-serif;
+         font-style: normal;
+         font-weight: normal;
+         font-size: 34px;
+         margin-top: 2em;
+         line-height: 102.7%;
+         text-align: center;
+         letter-spacing: 0.01em;
+         text-align-last: center;
+         color: #6B7692;
+
+         @media (max-width: 840px) {
+             font-size: 20px;
+         }
+
+         @media (min-width:841px) and (max-width: 1380px) {
+             font-size: 25px;
+
+         }
+
+     }
+ }

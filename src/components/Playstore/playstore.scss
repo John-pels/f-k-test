@@ -1,0 +1,115 @@
+.playstore {
+    background: url('https://res.cloudinary.com/john-pels/image/upload/v1590065113/Group_260.png') no-repeat 100% 35%;
+    min-height: 900px;
+    position: relative;
+    background-color: #FFF;
+    padding: 8em 0 35em 0;
+
+    @media (max-width:840px) {
+        background: none;
+
+
+    }
+
+
+
+    &__hero-text {
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 78px;
+        line-height: 102.7%;
+        letter-spacing: -0.01em;
+        color: #0D2B76;
+
+        @media (max-width:840px) {
+            font-size: 40px;
+            text-align: center;
+
+        }
+
+        @media (min-width:841px) and (max-width: 1380px) {
+            font-size: 50px;
+
+
+        }
+
+
+    }
+
+    .mr {
+        margin-right: 4em;
+
+        @media(max-width:840px) {
+            margin-right: 0;
+        }
+
+        @media (min-width:841px) and (max-width: 1380px) {
+            margin-right: 2em;
+
+        }
+    }
+
+
+
+    .btn-wrapper {
+        @media (max-width:840px) {
+            background: none;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+
+        }
+
+        .img {
+            width: 50px;
+            height: 50px;
+
+            img {
+                display: block;
+            }
+        }
+
+        .btn-playstore,
+        .btn-apple {
+            display: flex;
+            width: 310.48px;
+            justify-content: center;
+            padding: .7em;
+            background: #2336FF;
+            border-radius: 18.6753px;
+            color: #FFF;
+
+            .weight-text {
+                font-size: 32.6818px;
+            }
+
+            @media (max-width:840px) {
+                margin-bottom: 1em;
+
+            }
+
+            @media (min-width:841px) and (max-width: 1380px) {
+                width: 250px;
+            }
+
+
+        }
+    }
+
+    .positioned-ellipse {
+        position: absolute;
+        top: -6em;
+        left: -3em;
+
+        @media (max-width:840px) {
+            display: none;
+
+        }
+
+        @media (min-width:841px) and (max-width: 1380px) {
+            left: -5em;
+        }
+
+    }
+}
