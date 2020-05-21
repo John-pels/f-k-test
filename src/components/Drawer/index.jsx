@@ -1,5 +1,5 @@
 import React from "react";
-// import "./styles.scss";
+import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import Button from "@material-ui/core/Button";
@@ -37,6 +37,10 @@ const btnLogin = {
   fontSize: "20px",
   letterSpacing: "-0.01em",
   marginRight: "1em",
+};
+const aStyles = {
+  color: "#FFF",
+  textDecoration: "none",
 };
 const btnCreate = {
   width: "291px",
@@ -81,17 +85,33 @@ export function TemporaryDrawer(props) {
     >
       <List style={listStyles}>
         <ul style={ulStyles}>
-          <li>Customers</li>
-          <li>Products</li>
-          <li>About</li>
-          <li>Learn</li>
+          <li>
+            <Link to="/faq" style={aStyles}>
+              Customers
+            </Link>
+          </li>
+          <li>
+            <Link to="/how" style={aStyles}>
+              Products
+            </Link>
+          </li>
+          <li>
+            <Link to="/faq" style={aStyles}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="/how" style={aStyles}>
+              Learn
+            </Link>
+          </li>
         </ul>
-        <a href="google.com" rel="noopener noreferrer" style={btnLogin}>
+        <a href="/" rel="noopener noreferrer" style={btnLogin}>
           Log In
         </a>{" "}
         <br />
         <br />
-        <a href="google.com" rel="noopener noreferrer" style={btnCreate}>
+        <a href="/how" rel="noopener noreferrer" style={btnCreate}>
           Create a Free Account
         </a>
       </List>
