@@ -7,8 +7,8 @@
 
     @media (max-width:840px) {
         background: none;
-
-
+        min-height: 300px;
+        padding: 1em;
     }
 
 
@@ -23,15 +23,17 @@
         color: #0D2B76;
 
         @media (max-width:840px) {
-            font-size: 40px;
+            font-size: 35px;
             text-align: center;
+
+            br {
+                display: none;
+            }
 
         }
 
         @media (min-width:841px) and (max-width: 1380px) {
             font-size: 50px;
-
-
         }
 
 
