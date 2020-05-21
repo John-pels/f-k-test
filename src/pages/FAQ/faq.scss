@@ -4,7 +4,7 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        min-height: 100vh;
+        min-height: 90vh;
         color: #fff;
         position: relative;
         z-index: 1;
@@ -21,6 +21,12 @@
             z-index: -2;
             bottom: 16em;
             left: 6em;
+
+
+            @media (min-width:841px) and (max-width: 1380px) {
+                bottom: 4em;
+
+            }
         }
 
         .hero-text {
@@ -82,17 +88,28 @@
         padding: 0 12em;
 
         @media (max-width:840px) {
-            padding: 0 12em;
+            padding: 1em;
 
         }
 
         @media (min-width:841px) and (max-width: 1380px) {
-            padding: 5em 12em 1em;
+            padding: 5em 8em 1em;
 
         }
 
         .mb {
             margin-bottom: 7em;
+
+            @media (max-width:840px) {
+                margin-bottom: 3em;
+
+            }
+
+            @media (min-width:841px) and (max-width: 1380px) {
+                margin-bottom: 3em;
+
+
+            }
         }
 
         .h2 {
@@ -106,6 +123,13 @@
 
             @media (min-width:841px) and (max-width: 1380px) {
                 font-size: 40px;
+            }
+
+            @media (max-width:840px) {
+                font-size: 30px;
+                margin-bottom: 1em;
+                text-align: center;
+
             }
         }
 
@@ -124,6 +148,11 @@
                 @media (min-width:841px) and (max-width: 1380px) {
                     font-size: 25px;
 
+                }
+
+                @media (max-width:840px) {
+                    font-size: 20px;
+                    text-align: center;
                 }
             }
         }
